@@ -1,3 +1,11 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resources :cities, only: [:index, :create] do
+    get :search, on: :collection
+  end
+  resources :resources, only: [:index, :create]
+  resources :tweets, only: [:create] do
+    get :search, on: :collection
+  end
+  
+  root  'tweets#dashboard'
 end
