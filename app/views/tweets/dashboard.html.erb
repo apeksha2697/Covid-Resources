@@ -1,0 +1,9 @@
+<div class="card" id="city">
+  <div class="card-body">Select city</div>
+	<div class="search">
+	<%= form_with :url => {:action => 'search', :contoller => 'tweet'},  method: :get  do |f| %>
+		<%=  f.select :city, City.pluck(:name),{prompt:'city'} , {class: "form-select"} %><br/>
+		<%=  f.select :resource, Resource.pluck(:name),{prompt:'Resource'} , {class: "form-select"} %><br/ >
+		<%= f.submit "Submit" %>
+	<% end %>
+</div>
