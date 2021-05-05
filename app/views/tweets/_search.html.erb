@@ -1,0 +1,13 @@
+<% @tweets.each do |tweet| %>
+  <div class="card" id="tweet">
+    <div class="card-body">
+      <div><%= image_tag("#{tweet.user.profile_image_url}", class:"img") %>
+        <%= tweet.user.name %><br>
+        <%= link_to "@#{tweet.user.screen_name}", "#{tweet.user.url}", target: :_blank %>
+      </div><br> 
+      <p><%= tweet.full_text %></p><br>
+      <p><%= tweet.created_at.strftime('%-d/%m/%Y') %></p>
+    </div>
+  </div>
+<% end %><br>
+ 
