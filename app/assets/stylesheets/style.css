@@ -1,5 +1,19 @@
 #city{
-  width: 35%;
+  width: 80%;
+  margin-left: 1cm;
+  margin-top: 1cm;
+  height: 50%;
+}
+
+#tweet{
+  width: 70%;
+  margin-left: 1cm;
+  margin-top: 1cm;
+  margin-right: 1cm;
+}
+
+#resource{
+  width: 80%;
   margin-left: 1cm;
   margin-top: 1cm;
 }
@@ -34,3 +48,34 @@ form input[type=submit] {
   cursor: pointer;
   margin-left: 35px;
 }
+
+.btn{
+  width: 25%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  margin-top: 40px;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  margin-top: 60px;
+
+}
+
