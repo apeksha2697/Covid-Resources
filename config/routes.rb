@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
   resources :cities, only: [:index, :create] do
     get :search, on: :collection
-  end
-  resources :resources, only: [:index, :create]
-  resources :tweets, only: [:create] do
-    get :search, on: :collection
+    resources :resources, only: [:index, :create] do
+      get :search, on: :collection
+    end
   end
   
-  root  'tweets#dashboard'
+  root  'cities#index'
 end
