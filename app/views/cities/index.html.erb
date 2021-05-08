@@ -1,0 +1,16 @@
+<h3 id="indexh3">Select City</h3><br>
+<div class="nav" id="index">
+  <input type="checkbox">
+    <span></span>
+    <span></span>
+    <h3></h3>
+    <% @cities.each do |city| %>
+    <div class="menu" >
+      <li>
+        <a><%= link_to "#{city.name}", city_resources_path(city.id), remote: true %></a>
+      </li>
+    </div>
+    <%end%>
+</div>
+
+<div id="resources"></div>

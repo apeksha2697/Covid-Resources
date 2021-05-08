@@ -1,0 +1,24 @@
+<% @tweets.each do |tweet| %>
+  <div class="card" id="tweet">
+    <div class="card-body">
+    <%= link_to "#{tweet.url}",  target: :_blank do %>
+      <span class="fa fa-twitter" style="font-size:24px;color:#00acee; float: right;"></span>
+    <% end %>
+      <div>
+        <%= image_tag("#{tweet.user.profile_image_url}", class:"img") %>
+      </div>
+      <div>       
+        <b><%= tweet.user.name.titlecase %></b><br>
+        <%= link_to "@#{tweet.user.screen_name}", "#{tweet.user.url}", target: :_blank %>
+      </div><br> 
+      <p><%= tweet.full_text %></p><br>
+      <i class="fa fa-retweet"> <%= tweet.retweet_count %> </i>
+      <i class="fa fa-heart color:red"> <%= tweet.favorite_count %> </i>  
+      <p><%= tweet.created_at.in_time_zone("Chennai").strftime("%d-%m-%Y %I:%M %p") %></p>
+    </div>
+  </div>
+<% end %><br>
+<% if @tweets.empty? %>
+  <p>No verified tweets found related to <%= City.find(params[:city_id]).name %> and <%= params[:resource] %>.</p>
+  <%end%>
+  

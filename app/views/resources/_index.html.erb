@@ -1,0 +1,13 @@
+<div class="sidenav">
+  <a style="color:white"><b><%= City.find(params[:city_id]).name.upcase %></b></a><br/><br/>
+  <% @resources.each do |resource| %>
+    <a><%= link_to "#{resource.name.titlecase}", search_city_resources_path(params[:city_id],resource: "#{resource.name}"), remote: true %></a>
+  <% end %>
+</div>
+<div class="main">
+  <div id="tweet"></div>
+</div>
+
+
+
+
