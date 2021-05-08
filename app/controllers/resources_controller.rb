@@ -10,8 +10,8 @@ class ResourcesController < ApplicationController
 
   def search
     @tweets = []
-    city = City.find(params[:city_id]).name
-    resource = params[:resource]
+    city = params[:city]
+    resource = Resource.find(params[:resource_id]).name
     tweets = Twitter::REST::Client.new do |config|
       config.consumer_key =  ENV['TWITTER_API_KEY']
       config.consumer_secret = ENV['TWITTER_API_SECRET']
