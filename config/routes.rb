@@ -1,10 +1,10 @@
-Rails.application.routes.draw do
-  resources :cities, only: [:index, :create] do
+Rails.application.routes.draw do  
+  resources :resources, only: [:index, :create] do
     get :search, on: :collection
-    resources :resources, only: [:index, :create] do
+    resources :cities, only: [:index, :create] do
       get :search, on: :collection
     end
   end
   
-  root  'cities#index'
+  root  'resources#index'
 end
