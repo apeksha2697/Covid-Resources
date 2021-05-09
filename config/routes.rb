@@ -5,6 +5,10 @@ Rails.application.routes.draw do
       get :search, on: :collection
     end
   end
+
+  resource :vaccines do
+    get :state, on: :collection
+  end
   
   root  'resources#index'
 end
