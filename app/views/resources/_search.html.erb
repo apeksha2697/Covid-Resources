@@ -1,4 +1,4 @@
-<b><p style="margin-top:1.7cm;margin-left:1cm;"><%= Resource.find(params[:resource_id]).name.titlecase %> in <%="#{params[:city].titlecase}" %></p></b>
+<b><p style="margin-left:1cm;"><%= Resource.find(params[:resource_id]).name.titlecase %> in <%="#{params[:city].titlecase}" %></p></b>
 <% @tweets.each do |tweet| %>
   <div class="card" id="tweet">
     <div class="card-body">
@@ -30,4 +30,3 @@
 <% if @tweets.empty? %>
 <b><p>No verified tweets found related to <%= Resource.find(params[:resource_id]).name.titlecase %> in <%= params[:city].titlecase %>.</p></b>
 <%end%>
-  
