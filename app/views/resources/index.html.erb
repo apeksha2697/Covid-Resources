@@ -3,31 +3,37 @@
   <b><p>Select Resource Type</p></b>
     <div class="grid-container">
       <div class="grid-item">
+      <p style="text-align: left;"><b>Bed</b></p>
       <%= link_to resource_cities_path(resource_id: 1), title: "Bed" do %>
         <%= image_tag("https://www.svgrepo.com/show/275738/hospital-bed-bed.svg", size:"150x150") %>
       <%end%>
       </div>
       <div class="grid-item">
+      <p style="text-align: left;"><b>Oxygen</b></p>
       <%= link_to resource_cities_path(resource_id: 2), title: "Oxygen" do %>
         <%= image_tag("https://www.svgrepo.com/show/120638/oxygen.svg", size:"150x150") %>
       <%end%>
       </div>
       <div class="grid-item">
+      <p style="text-align: left;"><b>Ventilator</b></p>
       <%= link_to resource_cities_path(resource_id: 3), title: "Ventilator" do %>
         <%= image_tag("https://img.freepik.com/free-vector/hospital-scene-with-sick-patient-bed-white-background_1308-42296.jpg?size=338&ext=jpg", size:"175x175") %>
       <%end%>
       </div>
       <div class="grid-item">
+      <p style="text-align: left;"><b>Plasma</b></p>
       <%= link_to resource_cities_path(resource_id: 5), title: "Plasma" do %>
         <%= image_tag("https://www.svgrepo.com/show/194259/blood-donation.svg", size:"150x150") %>
       <%end%>
       </div>
       <div class="grid-item">
+      <p style="text-align: left;"><b>Ambulance</b></p>
       <%= link_to resource_cities_path(resource_id: 6), title: "Ambulance" do %>
         <%= image_tag("https://www.svgrepo.com/show/70501/ambulance.svg", size:"150x150") %>
       <%end%>
       </div>
       <div class="grid-item">
+      <p style="text-align: left;"><b>Remdesivir</b></p>
       <%= link_to resource_cities_path(resource_id: 8), title: "Remdesivir" do %>
         <%= image_tag("https://www.svgrepo.com/show/284205/injection-doctor.svg", size:"150x150") %>
       <%end%>
@@ -35,3 +41,4 @@
   </div>
   </div>
 </div>
+<%= link_to "vaciination", state_vaccines_path %>
