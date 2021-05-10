@@ -1,9 +1,13 @@
 class ResourcesController < ApplicationController
 
   def index
-    @resources = Resource.all
+    # newsapi = News.new("8c3126bd276b47308f36ad5a2dbb2067")
+    # to_date = Date.today.strftime("%Y-%m-%d")
+    # from_date = Date.yesterday.strftime("%Y-%m-%d")
+    # sources = newsapi.get_sources(country: 'in', language: 'en')
+    # @news = newsapi.get_everything(q: 'corona OR coronavirus OR vaccine OR vaccination',sources: 'the-hindu,the-times-of-india',domains: 'bbc.co.uk,techcrunch.com',from: from_date, to: to_date,language: 'en',sortBy: 'recent').take(20)
   end
-
+  
   def create
     resource = Resource.new(resource_params)
   end
