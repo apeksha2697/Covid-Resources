@@ -1,0 +1,15 @@
+<div class="card" id="state">
+  <div class="card-body" >
+  <%= link_to root_path, title: "Back" do %>
+    <i class="fas fa-long-arrow-alt-left fa-2x"></i>
+    <%end%>
+    <h3 style="margin-left:1cm;">Select a State and District</h3>
+    <div class="form">
+    <%= form_with url: district_vaccines_path, method: :get do |f| %>
+      <%= f.select :state_id, @all_states.pluck("state_name","state_id"),{prompt:'State'}, {class: "form-select"} %>
+     <%= f.submit "Select" %>
+    <%end %>
+    </div>
+    <div id="district"></div>
+  </div>
+</div>

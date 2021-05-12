@@ -37,6 +37,8 @@
   margin-right: 25%;
   margin-bottom: 1cm;
   width: 50%;
+  box-shadow: 0 8px 15px rgba(0,0,0,.2);
+
 }
 
 .button{
@@ -72,6 +74,8 @@
   margin-right: 1cm;
   width: 90%;
   margin-left: 1cm;
+  box-shadow: 0 8px 15px rgba(0,0,0,.2);
+
 }
 
 .sidenav {
@@ -155,6 +159,8 @@
   margin-bottom: 1cm;
   font-size: smaller;
   padding: 10px;
+  box-shadow: 0 8px 15px rgba(0,0,0,.2);
+
 }
 
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
@@ -213,4 +219,73 @@ section .section-title {
     padding-bottom: 0px;
     margin-bottom: 10px;
 }
+}
+
+#state{
+  margin-top: 1cm;
+  margin-left: 20%;
+  margin-right: 20%;
+  min-height: 10cm;
+  box-shadow: 0 8px 15px rgba(0,0,0,.2);
+
+}
+
+.form{
+  background-color: white;
+  margin-top: 1cm;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding-inline: 20px;
+}
+
+form select {
+  background-color: white;
+}
+
+
+form input[type=submit] {
+  width: 20%;
+  background-color: #60af78;
+  color: white;
+  padding:  8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form input[type=number], select {
+  width: 60%;
+  padding: 8px 15px;
+  margin-left: 5cm;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#center{
+  margin-top: 1cm;
+  margin-left: 3%;
+  margin-right: 3%;
+  overflow: auto;
+  max-height: 8cm;
+  box-shadow: 0 8px 15px rgba(0,0,0,.2);
+
+}
+
+td {
+  text-align: center;
+  font-size: small;
+}
+
+#vaccine{
+  margin-left: 5%;
+  margin-top: 1cm;
+  margin-right: 5%;
+  margin-bottom: 1cm;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 8px 15px rgba(0,0,0,.2);
+}
+.link{
+  color: black;
 }

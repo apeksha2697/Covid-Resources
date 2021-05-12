@@ -1,0 +1,7 @@
+<div class="form">
+<%= form_with url: find_by_district_vaccines_path, method: :get do |f| %>
+  <%= f.select :district_id, @all_districts.pluck("district_name","district_id"),{prompt:'Districts'} %>
+  <%= f.submit  "Search"%>
+<%end %>
+</div>
+<div id="find_by_district"></div>
