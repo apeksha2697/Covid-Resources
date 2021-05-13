@@ -6,7 +6,7 @@
     <h3 style="margin-left:1cm;">Select a State and District</h3>
     <div class="form">
     <%= form_with url: district_vaccines_path, method: :get do |f| %>
-      <%= f.select :state_id, @all_states.pluck("state_name","state_id"),{prompt:'State'}, {class: "form-select"} %>
+      <%= f.select :state_id, @all_states.pluck("state_name","state_id"),{prompt:'State'}, {class: "form-select",required: 'required'} %>
      <%= f.submit "Select" %>
     <%end %>
     </div>
