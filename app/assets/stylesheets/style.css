@@ -227,7 +227,7 @@ section .section-title {
   margin-right: 20%;
   min-height: 10cm;
   box-shadow: 0 8px 15px rgba(0,0,0,.2);
-
+  margin-bottom: 1cm;
 }
 
 .form{

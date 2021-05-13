@@ -50,6 +50,20 @@ class VaccinesController < ApplicationController
       :headers=>{:user_agent=> ENV["USER_AGENT"], :Authorization=> ENV["BEARER"]}
       ).execute  
     centers = ActiveSupport::JSON.decode(response.body)
+    min_age_limit = params["min_age_limit"].to_i
+    @all_centers = []
     @center = centers.first[1]
+    if (min_age_limit == 45 || min_age_limit==18)
+      @center.each do |center| 
+        center["sessions"].each do |session|
+          if session["min_age_limit"] == min_age_limit
+            @all_centers.append(center)
+          end
+        end
+      end
+    else
+      @all_centers = @center
+    end
+    @all_centers
   end
 end
