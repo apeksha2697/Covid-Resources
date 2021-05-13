@@ -1,6 +1,12 @@
 <div class="form">
 <%= form_with url: find_by_district_vaccines_path, method: :get do |f| %>
-  <%= f.select :district_id, @all_districts.pluck("district_name","district_id"),{prompt:'Districts'} %>
+  <%= f.select :district_id, @all_districts.pluck("district_name","district_id"),{prompt:'Districts'} ,:required => 'required'%><br/><br/>
+  <%= radio_button_tag(:min_age_limit, 0) %>
+  <a style="margin-right:0.5cm;" <%= label_tag(:min_age_limit, "All") %></a>
+  <%= radio_button_tag(:min_age_limit, 18) %>
+  <a style="margin-right:0.5cm;" <%= label_tag(:min_age_limit, "18+") %></a>
+  <%= radio_button_tag(:min_age_limit, 45) %>
+  <a style="margin-right:5.8cm;" <%= label_tag(:min_age_limit, "45+") %></a>  
   <%= f.submit  "Search"%>
 <%end %>
 </div>
