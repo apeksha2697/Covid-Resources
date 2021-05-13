@@ -18,7 +18,7 @@
       <th><%= Date.today + 13.days).try(:strftime, ("%B %e") %></th>
       <th><%= Date.today + 14.days).try(:strftime, ("%B %e") %></th>
     </tr>
-      <% @center.each do |center| %>
+      <% @all_centers.each do |center| %>
       <tr>
       <td style="color:blue;"><%= center["name"] %></td>      
       <% center["sessions"].each do |session| %>
