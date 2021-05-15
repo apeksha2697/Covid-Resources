@@ -11,6 +11,8 @@ gem 'rest-client'
 
 gem 'news-api'
 
+gem "font-awesome-rails"
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.6'
 # Use postgresql as the database for Active Record
