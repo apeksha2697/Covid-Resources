@@ -1,5 +1,5 @@
 <div class="card" id="center">
-  <table class="table  table-striped">
+  <table class="table">
     <tr>
       <th>Center Name</th>
       <th><%= Date.today.strftime("%B %d") %></th>
@@ -9,14 +9,6 @@
       <th><%= Date.today + 4.days).try(:strftime, ("%B %e") %></th>
       <th><%= Date.today + 5.days).try(:strftime, ("%B %e") %></th>
       <th><%= Date.today + 6.days).try(:strftime, ("%B %e") %></th>
-      <th><%= Date.today + 7.days).try(:strftime, ("%B %e") %></th>
-      <th><%= Date.today + 8.days).try(:strftime, ("%B %e") %></th>
-      <th><%= Date.today + 9.days).try(:strftime, ("%B %e") %></th>
-      <th><%= Date.today + 10.days).try(:strftime, ("%B %e") %></th>
-      <th><%= Date.today + 11.days).try(:strftime, ("%B %e") %></th>
-      <th><%= Date.today + 12.days).try(:strftime, ("%B %e") %></th>
-      <th><%= Date.today + 13.days).try(:strftime, ("%B %e") %></th>
-      <th><%= Date.today + 14.days).try(:strftime, ("%B %e") %></th>
     </tr>
       <% @all_centers.each do |center| %>
       <tr>
@@ -26,8 +18,8 @@
         <%= session["available_capacity"]%>(<%= session["min_age_limit"]%>+)
       </td>
       <%end%>
-      </tr>
       <% end %>
+    </tr>
   </table>
 </div>
 </div>
