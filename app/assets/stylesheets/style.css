@@ -33,7 +33,7 @@
 }
 
 #resource{
-  /* margin-left: 1cm; */
+   margin-left: 1cm; 
   margin-top: 1cm;
   /* margin-right: 50%;
   margin-bottom: 1cm; */
@@ -154,7 +154,7 @@
 }
 
 #disclaimer{
-  width: relative;
+  
   margin-left: 25%;
   margin-right: 25%;
   margin-bottom: 1cm;
@@ -278,11 +278,11 @@ td {
 }
 
 #vaccine{
-  margin-left: 25%;
+  /* margin-left: 25%;
   margin-top: 1cm;
   margin-right: 25%;
   margin-bottom: 1cm;
-  width: relative;
+  width: relative; */
   text-align: center;
   box-shadow: 0 8px 15px rgba(0,0,0,.2);
 }

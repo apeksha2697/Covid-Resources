@@ -1,40 +1,40 @@
-<div class="col-md-7">
+<div class="col-sm-6 col-md-5 col-lg-6">
 <div class="card" id="resource" >
   <div class="card-body">
     <b><p>Select Resource Type</p></b>
     <div class="grid-container">
       <div class="grid-item">
-        <p style="text-align: left;"><b>Bed</b></p>
+        <p style="text-align: centre;"><b>Bed</b></p>
         <%= link_to resource_cities_path(resource_id: 1), title: "Bed" do %>
           <%= image_tag("https://www.svgrepo.com/show/275738/hospital-bed-bed.svg", size:"125x125", class:"mw-100") %>
         <%end%>
       </div>
       <div class="grid-item">
-        <p style="text-align: left;"><b>Oxygen</b></p>
+        <p style="text-align: centre;"><b>Oxygen</b></p>
         <%= link_to resource_cities_path(resource_id: 2), title: "Oxygen" do %>
           <%= image_tag("https://www.svgrepo.com/show/120638/oxygen.svg", size:"125x125") %>
         <%end%>
       </div>
         <div class="grid-item">
-        <p style="text-align: left;"><b>Ventilator</b></p>
+        <p style="text-align: centre;"><b>Ventilator</b></p>
         <%= link_to resource_cities_path(resource_id: 3), title: "Ventilator" do %>
           <%= image_tag("https://img.freepik.com/free-vector/hospital-scene-with-sick-patient-bed-white-background_1308-42296.jpg?size=338&ext=jpg", size:"150x150") %>
         <%end%>
       </div>
       <div class="grid-item">
-        <p style="text-align: left;"><b>Plasma</b></p>
+        <p style="text-align: centre;"><b>Plasma</b></p>
         <%= link_to resource_cities_path(resource_id: 5), title: "Plasma" do %>
           <%= image_tag("https://www.svgrepo.com/show/194259/blood-donation.svg", size:"125x125") %>
         <%end%>
       </div>
       <div class="grid-item">
-        <p style="text-align: left;"><b>Ambulance</b></p>
+        <p style="text-align: centre;"><b>Ambulance</b></p>
         <%= link_to resource_cities_path(resource_id: 6), title: "Ambulance" do %>
           <%= image_tag("https://www.svgrepo.com/show/70501/ambulance.svg", size:"125x125") %>
         <%end%>
       </div>
       <div class="grid-item">
-        <p style="text-align: left;"><b>Remdesivir</b></p>
+        <p style="text-align: centre;"><b>Remdesivir</b></p>
         <%= link_to resource_cities_path(resource_id: 8), title: "Remdesivir" do %>
           <%= image_tag("https://www.svgrepo.com/show/284205/injection-doctor.svg", size:"125x125") %>
         <%end%>
@@ -43,17 +43,27 @@
   </div>
 </div>
 </div>
-<div class="card" id="vaccine">
-  <div class="card-body">
-    <%= link_to "Check your nearest vaccination center and slots availability",state_vaccines_path, class: "link" %>
+<div class="row">
+  <div class="p-3 col-3"></div>
+    <div class="p-3 col-6"><br/>
+      <div class="card" id="vaccine">
+        <div class="card-body">
+          <%= link_to "Check your nearest vaccination center and slots availability",state_vaccines_path, class: "link" %>
+        </div>
+      </div>
+    <div class="p-3 col-3"></div>
   </div>
 </div>
-<div class="jumbotron" id="disclaimer">
+
+<div class="col">
+  <div class="jumbotron" id="disclaimer">
   <b>Disclaimer</b>
   <p>
   All the information displayed here is already publicaly availabe and we do not own any of it.
   We have gathered some of the information from social media so that people can easily access them.
   These informations are not 100% verified by our team.
   </p>
+  </div>    
 </div>
+
 <%= render 'shared/footer' %>
