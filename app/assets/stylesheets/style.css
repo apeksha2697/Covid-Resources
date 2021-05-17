@@ -4,8 +4,8 @@
 
 #tweet{
   width: relative;
-  margin-left: 37px;
-  margin-right: 10px;
+  /* margin-left: 37px; */
+  /* margin-right: 10px; */
   margin-top: 0.6cm;
   border-radius: 5%;
 }
@@ -53,7 +53,7 @@
   font-size: 16px;
   border-radius: 12px;
 }
-
+/* 
 #col-1 {
   position: relative;
   width: 50%;
@@ -68,19 +68,17 @@
   float: left;
   height: 100%;
   overflow: hidden;
-}
+} */
 
 #city{
   margin-top: 2cm;
-  margin-right: 1cm;
   width: relative;
-  margin-left: 1cm;
   box-shadow: 0 8px 15px rgba(0,0,0,.2);
 
 }
 
 .sidenav {
-  margin-top:1.9cm;
+  /* margin-top:1.9cm; */
   height: 100%;
   width: 0;
   position: fixed;
@@ -112,7 +110,7 @@
   top: 0;
   right: 25px;
   font-size: 36px;
-  margin-left: 50px;
+  /* margin-left: 50px; */
 }
 
 #main {
@@ -142,10 +140,6 @@
   padding: 20px;
 }
 
-#h3{
-  float: centre;
-  color: red;
-}
 
 #newsheading{
   margin-left: 20%;
@@ -155,8 +149,8 @@
 
 #disclaimer{
   
-  margin-left: 25%;
-  margin-right: 25%;
+  /* margin-left: 25%;
+  margin-right: 25%; */
   margin-bottom: 1cm;
   font-size: smaller;
   padding: 10px;
@@ -288,4 +282,9 @@ td {
 }
 .link{
   color: black;
+}
+
+h3 {
+  text-align: center;
+  color:red;
 }
