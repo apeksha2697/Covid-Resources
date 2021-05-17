@@ -1,3 +1,4 @@
+<div class="col-md-7">
 <div class="card" id="resource" >
   <div class="card-body">
     <b><p>Select Resource Type</p></b>
@@ -5,7 +6,7 @@
       <div class="grid-item">
         <p style="text-align: left;"><b>Bed</b></p>
         <%= link_to resource_cities_path(resource_id: 1), title: "Bed" do %>
-          <%= image_tag("https://www.svgrepo.com/show/275738/hospital-bed-bed.svg", size:"125x125") %>
+          <%= image_tag("https://www.svgrepo.com/show/275738/hospital-bed-bed.svg", size:"125x125", class:"mw-100") %>
         <%end%>
       </div>
       <div class="grid-item">
@@ -40,6 +41,7 @@
       </div>
     </div>
   </div>
+</div>
 </div>
 <div class="card" id="vaccine">
   <div class="card-body">
