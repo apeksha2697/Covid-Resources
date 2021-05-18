@@ -34,7 +34,7 @@
 
 #resource{
   /* margin-left: 0.5cm;  */
-  margin-top: 1cm;
+  padding-top: 20px;
   /* margin-right: 50%;
   margin-bottom: 1cm; */
   /* width: relative; */
@@ -285,6 +285,7 @@ td {
 }
 
 h3 {
+  padding-top: 20px;
   text-align: center;
   color:red;
 }

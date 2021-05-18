@@ -3,7 +3,7 @@
   <div class="card" id="tweet">
     <div class="card-body">
     <%= link_to "#{tweet.url}",  target: :_blank do %>
-      <span class="fa fa-twitter" style="font-size:24px;color:#00acee; float: right;"></span>
+      <i class="fa fa-twitter" style="font-size:24px;color:#00acee; float: right;"></i>
     <% end %>
       <div>
         <%= image_tag("#{tweet.user.profile_image_url}", class:"img") %>
@@ -17,10 +17,10 @@
       <% else %>
         <% tweet.media.each do |media| %>
           <%= link_to "#{media.media_url}",target: :_blank do %>
-            <%= image_tag("#{media.media_url}", size: "500x300") %>
+            <%= image_tag("#{media.media_url}",class:"img-fluid", size:"100x300") %>
           <% end %>
         <% end %>
-      <% end %>
+      <% end %><br/>
       <i class="fa fa-retweet"> <%= tweet.retweet_count %> </i>
       <i class="fa fa-heart color:red"> <%= tweet.favorite_count %> </i>  
       <p><%= tweet.created_at.in_time_zone("Chennai").strftime("%d-%m-%Y %I:%M %p") %></p>
