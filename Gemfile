@@ -14,6 +14,7 @@ gem 'news-api'
 gem "font-awesome-rails"
 gem "letter_opener", group: :development
 
+gem 'whenever', require: false
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.6'
 # Use postgresql as the database for Active Record
